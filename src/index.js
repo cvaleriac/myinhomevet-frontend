@@ -5,11 +5,12 @@ import thunk from 'redux-thunk'
 import {Provider} from 'react-redux'
 import userReducer from './reducers/userReducer'
 
+
 import App from './App';
 
-const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-let store = createStore (userReducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(userReducer, composeEnhancers(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
