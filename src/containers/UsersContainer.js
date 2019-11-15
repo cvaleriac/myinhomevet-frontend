@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-
+import {Route} from 'react-router-dom'
 
 import {fetchUsers} from '../actions/fetchUsers'
 import Users from '../components/Users'
@@ -17,7 +17,8 @@ class UsersContainer extends React.Component{
 render(){
     return (
         <div>
-            <UserInput/><br/>
+            <Route path='/users/new' component={UserInput}/>
+            <Route path='/users'/>
             <Users users={this.props.users}/>
             </div>
     )

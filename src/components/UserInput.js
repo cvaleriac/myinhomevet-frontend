@@ -5,7 +5,8 @@ import {addUser} from '../actions/addUser'
 class UserInput extends React.Component {
 
   state = {
-    name: ''
+    name: '',
+
   }
 
   handleChange = (event) => {
@@ -18,7 +19,8 @@ class UserInput extends React.Component {
     event.preventDefault()
     this.props.addUser(this.state)
     this.setState({
-      name: ''
+      name: '',
+      
     })
   }
 
@@ -28,8 +30,8 @@ class UserInput extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>User Info: </label>
           <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}/><br/>
-        
-          <input type="submit" value='Submit'/>
+          
+          <input type="submit" value="Submit"/>
         </form>
       </div>
     )
