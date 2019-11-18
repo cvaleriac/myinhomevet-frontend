@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
 class ClinicInput extends React.Component {
 
@@ -12,4 +13,4 @@ class ClinicInput extends React.Component {
     }
 }
 
-export default ClinicInput
+export default connect(null) (ClinicInput)

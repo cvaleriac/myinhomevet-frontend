@@ -4,9 +4,16 @@ const Clinics = (props) => {
 
     return (
         <div>
-            Clinics
+            {props.clinics && props.clinics.map(clinic =>
+            <li key={clinic.id}>{clinic.name} -{clinic.address}- {clinic.services}
+
+            </li>
+
+            )}
+
         </div>
-    )
+)
+
 }
 
 

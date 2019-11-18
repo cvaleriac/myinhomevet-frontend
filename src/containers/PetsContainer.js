@@ -8,7 +8,7 @@ class PetsContainer extends React.Component {
         return (
 
             <div>
-                <PetInput/>
+                <PetInput user={this.props.user}/>
                 <Pets pets = {this.props.user && this.props.user.pets}/>
             </div>
         )

@@ -4,7 +4,13 @@ const Pets = (props) => {
 
     return (
         <div>
-            Pets
+            {props.pets && props.pets.map(pet =>
+            <li key={pet.id}>{pet.name} -{pet.species}- {pet.age}
+
+            </li>
+
+            )}
+
         </div>
     )
 }
