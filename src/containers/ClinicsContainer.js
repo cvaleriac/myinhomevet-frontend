@@ -8,7 +8,7 @@ class ClinicsContainer extends React.Component {
         return (
 
             <div>
-                <ClinicInput/>
+                <ClinicInput user={this.props.user} />
                 <Clinics clinics={this.props.user && this.props.user.clinics}/>
             </div>
         )

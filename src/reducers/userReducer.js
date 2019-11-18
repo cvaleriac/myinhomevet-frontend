@@ -1,5 +1,5 @@
 export default function userReducer(state = {users: []}, action) {
-    debugger;
+
     switch(action.type) {
         case'FETCH_USERS':
         return {users: action.payload}
@@ -15,6 +15,9 @@ export default function userReducer(state = {users: []}, action) {
             return user
             }
         })
+
+        case 'ADD_CLINIC':
+        return {...state, users: [...state.users, action.payload]}
 
         return {...state, users: users}
         default:
