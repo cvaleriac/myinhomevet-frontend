@@ -10,6 +10,8 @@ const Users = (props) => {
         <Link to={`/users/${user.id}`}>{user.name}</Link>
         </li>)}
 
+        <Link to={`/users/new`}></Link>
+
             </div>
     )
 
