@@ -29,6 +29,28 @@ export default function userReducer(state = {users: []}, action) {
         }
 
         )}
+        
+        case 'DELETE_PET':
+      let user = state.users.map(user => {
+        if (user.id === action.payload.id) {
+          return action.payload
+        } else {
+          return user
+        }
+      })
+      return {...state, users: user}
+
+      case 'DELETE_CLINIC':
+      return {...state, users: state.users.map(user =>{
+        if (user.id === action.payload.id) {
+            return action.payload
+        }else{
+            return user
+        }
+    }
+
+    )}
+
         default:
         return state
 

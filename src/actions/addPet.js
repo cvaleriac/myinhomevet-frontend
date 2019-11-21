@@ -11,8 +11,13 @@ export const addPet = (pet, userId) => {
       })
       .then(response => response.json())
       .then(user => {
+          if (user.error) {
+              alert(user.error)
+          }else{
        dispatch({type: 'ADD_PET', payload: user})
-        })
+        }
+    }
+        )
    }
 
  }
