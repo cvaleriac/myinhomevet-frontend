@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addPet} from '../actions/addPet'
 
+
 class PetInput extends React.Component {
 
     state = {

@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addClinic} from '../actions/addClinic'
 
+
 class ClinicInput extends React.Component {
 
     state = {

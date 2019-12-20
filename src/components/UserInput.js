@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addUser} from '../actions/addUser'
+import Button from 'react-bootstrap/Button'
 
 class UserInput extends React.Component {
 

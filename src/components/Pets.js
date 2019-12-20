@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import {deletePet} from '../actions/deletePet'
 
 
-
-
 const Pets = (props) => {
 
     const handleDelete = (pet) =>{

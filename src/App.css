@@ -20,3 +20,19 @@
 .App-link {
   color: #09d3ac;
 }
+
+body {
+    background-image: url(https://images.app.goo.gl/7Wtnc5U9QmN6W3wL8);
+    background-repeat: repeat-x;
+  }
+
+.button {
+    background-color:powderblue ; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteClinic} from '../actions/deleteClinic'
+import Button from 'react-bootstrap/Button'
 
 const Clinics = (props) => {
 
