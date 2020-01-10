@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deletePet} from '../actions/deletePet'
+import Button from 'react-bootstrap/Button'
 
 
 const Pets = (props) => {
@@ -16,7 +17,7 @@ const Pets = (props) => {
     return (
         <div>
             {props.pets && props.pets.map(pet =>
-            <li key={pet.id}>{pet.name} -{pet.species}- {pet.age} <button onClick={() =>handleDelete(pet)}>Delete</button>
+            <li key={pet.id}>{pet.name} -{pet.species}- {pet.age} <Button variant="outline-primary" onClick={() =>handleDelete(pet)}>Delete</Button>
             </li>
 
             )}

@@ -12,7 +12,7 @@ const Clinics = (props) => {
     return (
         <div>
             {props.clinics && props.clinics.map(clinic =>
-            <li key={clinic.id}>{clinic.name} -{clinic.address}- {clinic.services} <button onClick={() => handleDelete(clinic)}>Delete</button>
+            <li key={clinic.id}>{clinic.name} -{clinic.address}- {clinic.services} <Button variant="outline-primary" onClick={() => handleDelete(clinic)}>Delete</Button>
 
             </li>
 
