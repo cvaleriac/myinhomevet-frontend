@@ -3,7 +3,7 @@
   background-image: url("assets/pets.jpg");
   background-size: 30%;
   background-attachment: scroll;
-  background-position: left bottom;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-color:aliceblue;
@@ -40,6 +40,25 @@
       font-size: 16px;
     }
 
+    .container {
+        width: 80%;
+        height: 200px;
+        background:aliceblue;
+        margin: auto;
+        padding: 10px;
+    }
+    .one {
+        width: auto;
+        height: auto;
+        background: lightblue;
+        float:right;
+    }
+    .two {
+        margin-left: auto;
+        height: auto;
+        background: lightblue;
+        float: right;
+    }
 
 
       

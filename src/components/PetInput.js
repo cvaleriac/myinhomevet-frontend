@@ -31,7 +31,9 @@ class PetInput extends React.Component {
     render() {
 
         return (
-            <div>
+            <section class="container">
+            <div class="two">
+                <h3> You can add a new pet:</h3>
               <form onSubmit={this.handleSubmit}>
               <label>New Pet Info: </label>
               <input type='text' placeholder='Name' name = "name" value = {this.state.name} onChange={this.handleChange}/><br/>
@@ -40,6 +42,7 @@ class PetInput extends React.Component {
               <input type="submit" value="Submit"/><br/>
              </form> <br/>
             </div>
+            </section>
         )
     }
 }

@@ -10,7 +10,9 @@ const Clinics = (props) => {
         props.deleteClinic(clinic.id, clinic.user_id)
     }
     return (
+        
         <div>
+            <h3>...And your favorite clinics</h3> 
             {props.clinics && props.clinics.map(clinic =>
             <li key={clinic.id}>{clinic.name} -{clinic.address}- {clinic.services} <Button variant="outline-primary" onClick={() => handleDelete(clinic)}>Delete</Button>
 
@@ -19,6 +21,7 @@ const Clinics = (props) => {
             )}
 
         </div>
+        
 )
 
 }

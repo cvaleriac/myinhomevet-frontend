@@ -15,7 +15,9 @@ const Pets = (props) => {
     
 
     return (
+
         <div>
+            <h3> Here it's the list of your pets...</h3>
             {props.pets && props.pets.map(pet =>
             <li key={pet.id}>{pet.name} -{pet.species}- {pet.age} <Button variant="outline-primary" onClick={() =>handleDelete(pet)}>Delete</Button>
             </li>
@@ -23,6 +25,7 @@ const Pets = (props) => {
             )}
 
         </div>
+    
     )
  }
 

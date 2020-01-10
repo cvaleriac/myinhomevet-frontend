@@ -31,7 +31,9 @@ class ClinicInput extends React.Component {
     render() {
 
         return (
-            <div>
+            <section class="container">
+            <div class="one">
+                <h3> And a new clinic:</h3>
               <form onSubmit={this.handleSubmit}>
               <label>New Clinic Info: </label>
               <input type='text' placeholder='Name' name = "name" value = {this.state.name} onChange={this.handleChange}/><br/>
@@ -40,6 +42,7 @@ class ClinicInput extends React.Component {
               <input type="submit" value="Submit"/><br/>
              </form> <br/>
             </div>
+            </section>
         )
     }
 }
